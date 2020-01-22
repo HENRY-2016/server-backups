@@ -1,0 +1,64 @@
+
+<html>
+<head>
+<title>Admin Index</title>
+</head>
+<style>
+.main_body{background-color: black;}
+.log_in_form
+{
+    font-family: 'Open Sans Condensed', arial, sans;
+	width: 250px;
+	padding: 30px;
+    background: #FFFFFF;
+	margin: 50px auto;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+.login_form_input
+{
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 200;
+	padding: 7px;
+	border: none;
+	border-bottom: 2px solid blue;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
+    text-align: center;
+}
+
+.login_label{font-size: 35px;font-weight:bold;color:red;font-family:Times New Roman Times, serif;}
+.kankan_label{font-size: 45px;font-weight:bold;color:red;font-family:Times New Roman Times, serif;}
+.loginbtn{color:white;font-size: 20px;font-weight: bold; background-color:blue; width:190px; height: 40px; border-radius: 50px;}
+.cancelbtn{color: #000;font-size: 20px;font-weight: bold; background-color: red; width:250px; height: 40px; border-radius: 50px;}
+</style>
+<script>
+function Log_in (){Window.location="success"}
+</script>
+<body class="main_body">
+    <center>
+    <label class="kankan_label" > Kan Kan </label><br>
+    <label class="login_label" >Log In Please !!!</label>
+<!-- <form class="log_in_form" method="POST" action="http://172.105.158.108:4444/validate_login" > -->
+	<!-- <form class="log_in_form" method="POST" action="http://127.0.0.1:5000/validate_login"> -->
+		<form class="log_in_form">
+        <label for="uname"><b>Username</b></label><br>
+        <input type="text" class="login_form_input" placeholder="Enter Username" name="uname" autocomplete="off" required><br><br>
+
+        <label for="psw"><b>Password</b></label><br>
+        <input type="password" class="login_form_input" placeholder="Enter Password" name="pwd" autocomplete="off" required><br><br>
+	
+        <button onclick="Log_in ()" type="button" class="loginbtn" >Login</button><br><br>
+        <!-- <button type="button" class="cancelbtn">Cancel</button> -->
+	</form>
+    </center>
+
+</body>
+</html>

@@ -1,0 +1,852 @@
+<!-- 
+
+ scp -r kan-kan-dir/* root@172.105.158.108:/home/desktop/flaskappsdir/kankanapp/templates
+
+ -->
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>kan kan | Admin</title>
+<script>
+
+function Load_Admin_Index () {window.location="AdminIndex"}
+function Load_Admin_Add_Chint_Names () {window.location="AdminAddChintNames"}
+function hide_admin_all_guis ()
+{
+document.getElementById("agency-names-div").style.display="none";
+document.getElementById("keracolor-names-div").style.display="none";
+document.getElementById("sadolin-staff-names-div").style.display="none";
+document.getElementById("silk-names-div").style.display="none";
+document.getElementById("super-names-div").style.display="none";
+document.getElementById("glose-names-div").style.display="none";
+document.getElementById("emulsion-names-div").style.display="none";
+document.getElementById("roodmarking-names-div").style.display="none";
+document.getElementById("roofguard-names-div").style.display="none";
+document.getElementById("bases-names-div").style.display="none";
+document.getElementById("weather-names-div").style.display="none";
+document.getElementById("thinner-names-div").style.display="none";
+}
+
+
+
+function show_admin_agency_div ()
+{
+    document.getElementById("keracolor-names-div").style.display="none";
+    document.getElementById("silk-names-div").style.display="none";
+    document.getElementById("super-names-div").style.display="none";
+    document.getElementById("thinner-names-div").style.display="none";
+    document.getElementById("weather-names-div").style.display="none";
+    document.getElementById("glose-names-div").style.display="none";
+    document.getElementById("emulsion-names-div").style.display="none";
+    document.getElementById("roodmarking-names-div").style.display="none";
+    document.getElementById("roofguard-names-div").style.display="none";
+    document.getElementById("bases-names-div").style.display="none";
+    document.getElementById("agency-names-div").style.display="block";
+}function close_admin_agency_div (){document.getElementById("agency-names-div").style.display="none";}
+
+function show_sadolin_staff_names_div ()
+{
+    document.getElementById("keracolor-names-div").style.display="none";
+    document.getElementById("silk-names-div").style.display="none";
+    document.getElementById("super-names-div").style.display="none";
+    document.getElementById("thinner-names-div").style.display="none";
+    document.getElementById("weather-names-div").style.display="none";
+    document.getElementById("agency-names-div").style.display="none";
+    document.getElementById("glose-names-div").style.display="none";
+    document.getElementById("emulsion-names-div").style.display="none";
+    document.getElementById("roodmarking-names-div").style.display="none";
+    document.getElementById("roofguard-names-div").style.display="none";
+    document.getElementById("bases-names-div").style.display="none";
+    document.getElementById("sadolin-staff-names-div").style.display="block";
+}function close_sadolin_staff_names_div (){document.getElementById("sadolin-staff-names-div").style.display="none";}
+
+function show_bases_names_div ()
+{
+    document.getElementById("keracolor-names-div").style.display="none";
+    document.getElementById("sadolin-staff-names-div").style.display="none";
+    document.getElementById("super-names-div").style.display="none";
+    document.getElementById("silk-names-div").style.display="none";
+    document.getElementById("thinner-names-div").style.display="none";
+    document.getElementById("agency-names-div").style.display="none";
+    document.getElementById("glose-names-div").style.display="none";
+    document.getElementById("emulsion-names-div").style.display="none";
+    document.getElementById("roodmarking-names-div").style.display="none";
+    document.getElementById("roofguard-names-div").style.display="none";
+    document.getElementById("weather-names-div").style.display="none";
+    document.getElementById("bases-names-div").style.display="block";
+}function close_bases_names_div (){document.getElementById("bases-names-div").style.display="none";}
+
+function show_emulsion_names_div ()
+{
+    document.getElementById("keracolor-names-div").style.display="none";
+    document.getElementById("sadolin-staff-names-div").style.display="none";
+    document.getElementById("super-names-div").style.display="none";
+    document.getElementById("weather-names-div").style.display="none";
+    document.getElementById("thinner-names-div").style.display="none";
+    document.getElementById("agency-names-div").style.display="none";
+    document.getElementById("emulsion-names-div").style.display="none";
+    document.getElementById("emulsion-names-div").style.display="none";
+    document.getElementById("roodmarking-names-div").style.display="none";
+    document.getElementById("roofguard-names-div").style.display="none";
+    document.getElementById("bases-names-div").style.display="none";
+    document.getElementById("emulsion-names-div").style.display="block";
+}function close_emulsion_names_div () {document.getElementById("emulsion-names-div").style.display="none";}
+    
+
+function show_glose_names_div ()
+{
+    document.getElementById("keracolor-names-div").style.display="none";
+    document.getElementById("sadolin-staff-names-div").style.display="none";
+    document.getElementById("super-names-div").style.display="none";
+    document.getElementById("weather-names-div").style.display="none";
+    document.getElementById("thinner-names-div").style.display="none";
+    document.getElementById("agency-names-div").style.display="none";
+    document.getElementById("silk-names-div").style.display="none";
+    document.getElementById("emulsion-names-div").style.display="none";
+    document.getElementById("roodmarking-names-div").style.display="none";
+    document.getElementById("roofguard-names-div").style.display="none";
+    document.getElementById("bases-names-div").style.display="none";
+    document.getElementById("glose-names-div").style.display="block";
+}function close_glose_names_div () {document.getElementById("glose-names-div").style.display="none";}
+
+
+function show_roodmarking_names_div ()
+{
+    document.getElementById("keracolor-names-div").style.display="none";
+    document.getElementById("sadolin-staff-names-div").style.display="none";
+    document.getElementById("super-names-div").style.display="none";
+    document.getElementById("silk-names-div").style.display="none";
+    document.getElementById("thinner-names-div").style.display="none";
+    document.getElementById("agency-names-div").style.display="none";
+    document.getElementById("glose-names-div").style.display="none";
+    document.getElementById("emulsion-names-div").style.display="none";
+    document.getElementById("weather-names-div").style.display="none";
+    document.getElementById("roofguard-names-div").style.display="none";
+    document.getElementById("bases-names-div").style.display="none";
+    document.getElementById("roodmarking-names-div").style.display="block";
+}function close_roodmarking_names_div (){document.getElementById("roodmarking-names-div").style.display="none";}
+
+function show_roofguard_names_div ()
+{
+    document.getElementById("keracolor-names-div").style.display="none";
+    document.getElementById("sadolin-staff-names-div").style.display="none";
+    document.getElementById("super-names-div").style.display="none";
+    document.getElementById("silk-names-div").style.display="none";
+    document.getElementById("thinner-names-div").style.display="none";
+    document.getElementById("agency-names-div").style.display="none";
+    document.getElementById("glose-names-div").style.display="none";
+    document.getElementById("emulsion-names-div").style.display="none";
+    document.getElementById("weather-names-div").style.display="none";
+    document.getElementById("bases-names-div").style.display="none";
+    document.getElementById("roofguard-names-div").style.display="block";
+}function close_roofguard_names_div (){document.getElementById("roofguard-names-div").style.display="none";}
+
+function show_silk_names_div ()
+{
+    document.getElementById("keracolor-names-div").style.display="none";
+    document.getElementById("sadolin-staff-names-div").style.display="none";
+    document.getElementById("super-names-div").style.display="none";
+    document.getElementById("weather-names-div").style.display="none";
+    document.getElementById("agency-names-div").style.display="none";
+    document.getElementById("thinner-names-div").style.display="none";
+    document.getElementById("glose-names-div").style.display="none";
+    document.getElementById("emulsion-names-div").style.display="none";
+    document.getElementById("roodmarking-names-div").style.display="none";
+    document.getElementById("roofguard-names-div").style.display="none";
+    document.getElementById("bases-names-div").style.display="none";
+    document.getElementById("silk-names-div").style.display="block";
+}function close_silk_names_div (){document.getElementById("silk-names-div").style.display="none";}
+
+function show_super_names_div ()
+{
+    document.getElementById("keracolor-names-div").style.display="none";
+    document.getElementById("sadolin-staff-names-div").style.display="none";
+    document.getElementById("silk-names-div").style.display="none";
+    document.getElementById("weather-names-div").style.display="none";
+    document.getElementById("agency-names-div").style.display="none";
+    document.getElementById("thinner-names-div").style.display="none";
+    document.getElementById("glose-names-div").style.display="none";
+    document.getElementById("emulsion-names-div").style.display="none";
+    document.getElementById("roodmarking-names-div").style.display="none";
+    document.getElementById("roofguard-names-div").style.display="none";
+    document.getElementById("bases-names-div").style.display="none";
+    document.getElementById("super-names-div").style.display="block";
+}function close_super_names_div (){document.getElementById("super-names-div").style.display="none";}
+
+function show_weather_names_div ()
+{
+    document.getElementById("keracolor-names-div").style.display="none";
+    document.getElementById("sadolin-staff-names-div").style.display="none";
+    document.getElementById("super-names-div").style.display="none";
+    document.getElementById("silk-names-div").style.display="none";
+    document.getElementById("agency-names-div").style.display="none";
+    document.getElementById("thinner-names-div").style.display="none";
+    document.getElementById("glose-names-div").style.display="none";
+    document.getElementById("emulsion-names-div").style.display="none";
+    document.getElementById("roodmarking-names-div").style.display="none";
+    document.getElementById("roofguard-names-div").style.display="none";
+    document.getElementById("bases-names-div").style.display="none";
+    document.getElementById("weather-names-div").style.display="block";
+}function close_weather_names_div (){document.getElementById("weather-names-div").style.display="none";}
+
+function show_thinner_names_div ()
+{
+    document.getElementById("keracolor-names-div").style.display="none";
+    document.getElementById("sadolin-staff-names-div").style.display="none";
+    document.getElementById("super-names-div").style.display="none";
+    document.getElementById("silk-names-div").style.display="none";
+    document.getElementById("agency-names-div").style.display="none";
+    document.getElementById("weather-names-div").style.display="none";
+    document.getElementById("glose-names-div").style.display="none";
+    document.getElementById("emulsion-names-div").style.display="none";
+    document.getElementById("roodmarking-names-div").style.display="none";
+    document.getElementById("roofguard-names-div").style.display="none";
+    document.getElementById("bases-names-div").style.display="none";
+    document.getElementById("thinner-names-div").style.display="block";
+}function close_thinner_names_div (){document.getElementById("thinner-names-div").style.display="none";}
+
+function show_mapei_keracolor_names_div ()
+{
+    document.getElementById("sadolin-staff-names-div").style.display="none";
+    document.getElementById("super-names-div").style.display="none";
+    document.getElementById("silk-names-div").style.display="none";
+    document.getElementById("agency-names-div").style.display="none";
+    document.getElementById("weather-names-div").style.display="none";
+    document.getElementById("glose-names-div").style.display="none";
+    document.getElementById("emulsion-names-div").style.display="none";
+    document.getElementById("roodmarking-names-div").style.display="none";
+    document.getElementById("roofguard-names-div").style.display="none";
+    document.getElementById("bases-names-div").style.display="none";
+    document.getElementById("thinner-names-div").style.display="none";
+    document.getElementById("keracolor-names-div").style.display="block";
+}function close_mapei_keracolor_names_div (){document.getElementById("keracolor-names-div").style.display="none";}
+
+
+
+/*
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        chint page
+
+*/
+function hide_chint_all_gui ()
+{
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+}
+
+function show_mcb1p_div ()
+{
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("mcb1p-div").style.display = "block";
+    
+}
+function close_mcb1p_div (){document.getElementById("mcb1p-div").style.display = "none";}
+
+function show_mcb2p_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "block";
+
+}
+function close_mcb2p_div (){document.getElementById("mcb2p-div").style.display = "none";}
+
+function show_mcb3p_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "block";
+}
+function close_mcb3p_div (){document.getElementById("mcb3p-div").style.display = "none";}
+
+function show_mcb4p_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "block";
+}
+function close_mcb4p_div (){document.getElementById("mcb4p-div").style.display = "none";}
+
+function show_cables_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "block";
+
+}
+function close_cables_div (){document.getElementById("cables-div").style.display = "none";}
+
+function show_mccb_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "block";
+
+}
+function close_mccb_div (){document.getElementById("mccb-div").style.display = "none";}
+
+function show_contactor_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "block";
+}
+function close_contactor_div (){document.getElementById("mccb-div").style.display = "none";}
+
+function show_main_switch_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "block";
+
+}
+function close_main_switch_div (){document.getElementById("main_switch-div").style.display = "none";}
+
+
+function show_gold_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="block";
+
+}function close_gold_div (){document.getElementById("gold-div").style.display = "none";}
+
+function show_industrial_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="block";
+
+}function close_industrial_div (){document.getElementById("industrial-div").style.display = "none";}
+
+function show_white_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="block";
+}function close_white_div (){document.getElementById("white-div").style.display = "none";}
+
+function show_silver_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="block";
+
+
+}function close_silver_div (){document.getElementById("silver-div").style.display = "none";}
+
+function show_led_bulbs_div ()
+{
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("led-bulbs-div").style.display = "block";
+}function close_led_bulbs_div (){document.getElementById("led-bulbs-div").style.display = "none";}
+
+function show_led_flood_div ()
+{
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "block";
+}function close_led_flood_div (){document.getElementById("led-flood-div").style.display = "none";}
+
+function show_led_panel_div ()
+{
+    document.getElementById("led-ceiling-div").style.display = "none";
+
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "block";
+}function close_led_panel_div (){document.getElementById("led-panel-div").style.display = "none";}
+
+function show_led_ceiling_div ()
+{
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "block";
+}function close_led_ceiling_div (){document.getElementById("led-ceiling-div").style.display = "none";}
+
+
+</script>
+
+<style>
+.main_body{background-color: black;}
+.clour_types_btn{background-color:#708090;border:none;width:100%;height:50px;border-radius:18px;}
+.entries_page_fonts{font-size: 20px;font-weight:bold;color:#E6E6FA;font-family:Times New Roman Times, serif;}
+.home-btn
+{
+	color:black;
+	border:none;
+	background-color: brown;
+	height:70px;
+	border-radius:100%;
+
+	font-size: 20px;
+	font-weight:bold;
+	font-family:Times New Roman Times, serif;
+}
+.agency_form
+{
+    font-family: 'Open Sans Condensed', arial, sans;
+	width: 250px;
+	padding: 30px;
+    background: #FFFFFF;
+	margin: 50px auto;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+	-webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+.agency-submit-btn{background-color: blue;border:none;width:100%;height:35px;border-radius:10px;}
+.clour_types_btn_close{background-color: red;border:none;width:100%;height:30px;border-radius:10px;}
+.agency-form-labels{font-family: Georgia, "Times New Roman", Times, serif; 	font-size: 100px;color: red;font-style: normal;font-weight:bold;}
+.entries_page_fonts{font-size: 20px;font-weight:bold;color:#E6E6FA;font-family:Times New Roman Times, serif;}
+
+.sadolin_form_input
+{
+    box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	outline: none;
+	display: block;
+	width: 200;
+	padding: 7px;
+	border: none;
+	border-bottom: 2px solid blue;
+	background: transparent;
+	margin-bottom: 10px;
+	font: 16px Arial, Helvetica, sans-serif;
+	height: 45px;
+    text-align: center;
+}
+.sadolin_form_input:focus{border-bottom: 2px solid black;}
+
+</style>
+</head>
+<body class="main_body" onload="hide_admin_all_guis ()">
+<center>
+	<button onclick="show_admin_agency_div ()" class="clour_types_btn entries_page_fonts">Agency Staffs </button><br>
+		<div id="agency-names-div">
+			<form class="agency_form" method="POST" action="http://172.105.158.108:4444/agency_record_new_staff" >
+			<!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/agency_record_new_staff" > -->
+				<label class=" agency-form-labels entries_page_fonts">Name </label><br>
+				<input autocomplete="off" name="agency_staff" class="sadolin_form_input"> <br>
+				<button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+			</form>
+		<button onclick="close_admin_agency_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+		</div><br>
+	
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<button onclick="Load_Admin_Add_Chint_Names ()" class="clour_types_btn entries_page_fonts">Chint </button><br><br>
+
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<button onclick="show_mapei_keracolor_names_div ()" class="clour_types_btn entries_page_fonts">Mapei :: Keracolor </button><br>
+	<div id="keracolor-names-div">
+		<form class="agency_form" method="POST" action="http://172.105.158.108:4444/keracolor_record_new_name"  >
+		<!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/keracolor_record_new_name" > -->
+			<label class=" agency-form-labels entries_page_fonts">Name </label><br>
+			<input autocomplete="off" name="keracolor_name" class="sadolin_form_input"> <br>
+			<button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+		</form>
+	<button onclick="close_mapei_keracolor_names_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+	</div><br>
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<button onclick="show_sadolin_staff_names_div ()" class="clour_types_btn entries_page_fonts">Sadolin Staffs </button><br>
+		<div id="sadolin-staff-names-div">
+			<form class="agency_form" method="POST" action="http://172.105.158.108:4444/sadolin_record_new_staff">
+			<!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/sadolin_record_new_staff" > -->
+				<label class=" agency-form-labels entries_page_fonts">Name </label><br>
+				<input autocomplete="off" name="sadolin_staff" class="sadolin_form_input"> <br>
+				<button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+			</form>
+		<button onclick="close_sadolin_staff_names_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+		</div><br>
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<button onclick="show_bases_names_div ()" class="clour_types_btn entries_page_fonts">Bases</button><br>
+	<div id="bases-names-div">
+		<form class="agency_form" method="POST" action="http://172.105.158.108:4444/base_record_new_names"  >
+		<!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/base_record_new_names" > -->
+			<label class=" agency-form-labels entries_page_fonts">Name</label><br>
+			<input autocomplete="off" name="base_names" class="sadolin_form_input"> <br>
+			<button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+		</form>
+	<button onclick="close_bases_names_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+	</div><br>
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	
+	<button onclick="show_thinner_names_div ()" class="clour_types_btn entries_page_fonts">Thinner Names</button><br>
+		<div id="thinner-names-div">
+			<form class="agency_form" method="POST" action="http://172.105.158.108:4444/thinner_record_new_names"  >
+			<!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/thinner_record_new_names" > -->
+				<label class=" agency-form-labels entries_page_fonts"> Name</label><br>
+				<input autocomplete="off" name="thinner_names" class="sadolin_form_input"> <br>
+				<button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+			</form>
+		<button onclick="close_thinner_names_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+		</div><br>
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+
+<button onclick="show_emulsion_names_div ()" class="clour_types_btn entries_page_fonts">Budget Emulsion</button><br>
+<div id="emulsion-names-div">
+	<form class="agency_form" method="POST" action="http://172.105.158.108:4444/emulsion_record_new_names"  >
+	<!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/emulsion_record_new_names" > -->
+		<label class=" agency-form-labels entries_page_fonts">Name</label><br>
+		<input autocomplete="off" name="emulsion_names" class="sadolin_form_input"> <br>
+		<button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+	</form>
+<button onclick="close_emulsion_names_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+</div><br>
+<!-- ================================================== -->
+<!-- ================================================== -->
+<!-- ================================================== -->
+<!-- ================================================== -->
+<!-- ================================================== -->
+
+
+
+<button onclick="show_roofguard_names_div ()" class="clour_types_btn entries_page_fonts">Roofguard</button><br>
+<div id="roofguard-names-div">
+	<form class="agency_form" method="POST" action="http://172.105.158.108:4444/roofguard_record_new_names"  >
+	<!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/roofguard_record_new_names" > -->
+		<label class=" agency-form-labels entries_page_fonts">Name</label><br>
+		<input autocomplete="off" name="roofguard_names" class="sadolin_form_input"> <br>
+		<button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+	</form>
+<button onclick="close_roofguard_names_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+</div><br>
+<!-- ================================================== -->
+<!-- ================================================== -->
+<!-- ================================================== -->
+<!-- ================================================== -->
+<!-- ================================================== -->
+
+<button onclick="show_roodmarking_names_div ()" class="clour_types_btn entries_page_fonts">Rood marking</button><br>
+<div id="roodmarking-names-div">
+	<form class="agency_form" method="POST" action="http://172.105.158.108:4444/roodmarking_record_new_names"  >
+	<!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/roodmarking_record_new_names" > -->
+		<label class=" agency-form-labels entries_page_fonts">Name</label><br>
+		<input autocomplete="off" name="roodmarking_names" class="sadolin_form_input"> <br>
+		<button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+	</form>
+<button onclick="close_roodmarking_names_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+</div><br>
+<!-- ================================================== -->
+<!-- ================================================== -->
+<!-- ================================================== -->
+<!-- ================================================== -->
+<!-- ================================================== -->
+
+
+<button onclick="show_glose_names_div ()" class="clour_types_btn entries_page_fonts">Budget Glose</button><br>
+		<div id="glose-names-div">
+			<form class="agency_form" method="POST" action="http://172.105.158.108:4444/glose_record_new_names"  >
+			<!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/glose_record_new_names" > -->
+				<label class=" agency-form-labels entries_page_fonts">Name</label><br>
+				<input autocomplete="off" name="glose_names" class="sadolin_form_input"> <br>
+				<button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+			</form>
+		<button onclick="close_glose_names_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+		</div><br>
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+
+<button onclick="show_silk_names_div ()" class="clour_types_btn entries_page_fonts">Silk Names</button><br>
+		<div id="silk-names-div">
+			<form class="agency_form" method="POST" action="http://172.105.158.108:4444/silk_record_new_names"  >
+			<!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/silk_record_new_names" > -->
+				<label class=" agency-form-labels entries_page_fonts">Name</label><br>
+				<input autocomplete="off" name="silk_names" class="sadolin_form_input"> <br>
+				<button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+			</form>
+		<button onclick="close_silk_names_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+		</div><br>
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+
+<button onclick="show_super_names_div ()" class="clour_types_btn entries_page_fonts">Super Glose Names</button><br>
+		<div id="super-names-div">
+			<form class="agency_form" method="POST" action="http://172.105.158.108:4444/super_record_new_names"  >
+			<!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/super_record_new_names"> -->
+				<label class=" agency-form-labels entries_page_fonts"> Name</label><br>
+				<input autocomplete="off" name="super_names" class="sadolin_form_input"> <br>
+				<button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+			</form>
+		<button onclick="close_super_names_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+		</div><br>
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+
+<button onclick="show_weather_names_div ()" class="clour_types_btn entries_page_fonts">Weather Guard Names</button><br>
+		<div id="weather-names-div">
+			<form class="agency_form" method="POST" action="http://172.105.158.108:4444/weather_record_new_names"  >
+			<!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/weather_record_new_names" > -->
+				<label class=" agency-form-labels entries_page_fonts"> Name</label><br>
+				<input autocomplete="off" name="weather_names" class="sadolin_form_input"> <br>
+				<button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+			</form>
+		<button onclick="close_weather_names_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+		</div><br>
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+
+	<button class="home-btn" onclick="Load_Admin_Index ()">Home</button>
+</center>
+</body>
+</html>

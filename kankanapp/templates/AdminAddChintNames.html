@@ -1,0 +1,742 @@
+
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>kan kan | Admin Chint Add</title>
+
+<script>
+
+function Load_Admin_Index () {window.location="AdminIndex"}
+
+/*
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+        chint page
+
+*/
+function hide_chint_all_gui ()
+{
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+}
+
+function show_mcb1p_div ()
+{
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("mcb1p-div").style.display = "block";
+    
+}
+function close_mcb1p_div (){document.getElementById("mcb1p-div").style.display = "none";}
+
+function show_mcb2p_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "block";
+
+}
+function close_mcb2p_div (){document.getElementById("mcb2p-div").style.display = "none";}
+
+function show_mcb3p_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "block";
+}
+function close_mcb3p_div (){document.getElementById("mcb3p-div").style.display = "none";}
+
+function show_mcb4p_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "block";
+}
+function close_mcb4p_div (){document.getElementById("mcb4p-div").style.display = "none";}
+
+function show_cables_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "block";
+
+}
+function close_cables_div (){document.getElementById("cables-div").style.display = "none";}
+
+function show_mccb_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "block";
+
+}
+function close_mccb_div (){document.getElementById("mccb-div").style.display = "none";}
+
+function show_contactor_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "block";
+}
+function close_contactor_div (){document.getElementById("mccb-div").style.display = "none";}
+
+function show_main_switch_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "block";
+
+}
+function close_main_switch_div (){document.getElementById("main_switch-div").style.display = "none";}
+
+
+function show_gold_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="block";
+
+}function close_gold_div (){document.getElementById("gold-div").style.display = "none";}
+
+function show_industrial_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="block";
+
+}function close_industrial_div (){document.getElementById("industrial-div").style.display = "none";}
+
+function show_white_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="block";
+}function close_white_div (){document.getElementById("white-div").style.display = "none";}
+
+function show_silver_div ()
+{
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="block";
+
+
+}function close_silver_div (){document.getElementById("silver-div").style.display = "none";}
+
+function show_led_bulbs_div ()
+{
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("led-bulbs-div").style.display = "block";
+}function close_led_bulbs_div (){document.getElementById("led-bulbs-div").style.display = "none";}
+
+function show_led_flood_div ()
+{
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "none";
+
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "block";
+}function close_led_flood_div (){document.getElementById("led-flood-div").style.display = "none";}
+
+function show_led_panel_div ()
+{
+    document.getElementById("led-ceiling-div").style.display = "none";
+
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "block";
+}function close_led_panel_div (){document.getElementById("led-panel-div").style.display = "none";}
+
+function show_led_ceiling_div ()
+{
+    document.getElementById("mcb1p-div").style.display = "none";
+    document.getElementById("mcb3p-div").style.display = "none";
+    document.getElementById("mcb2p-div").style.display = "none";
+    document.getElementById("mcb4p-div").style.display = "none";
+    document.getElementById("cables-div").style.display = "none";
+    document.getElementById("mccb-div").style.display = "none";
+    document.getElementById("contactor-div").style.display = "none";
+    document.getElementById("main-switch-div").style.display = "none";
+    document.getElementById("gold-div").style.display="none";
+    document.getElementById("industrial-div").style.display="none";
+    document.getElementById("white-div").style.display="none";
+    document.getElementById("silver-div").style.display="none";
+    document.getElementById("led-bulbs-div").style.display = "none";
+    document.getElementById("led-flood-div").style.display = "none";
+    document.getElementById("led-panel-div").style.display = "none";
+    document.getElementById("led-ceiling-div").style.display = "block";
+}function close_led_ceiling_div (){document.getElementById("led-ceiling-div").style.display = "none";}
+
+</script>
+
+<style>
+.main_body{background-color: black;}
+.clour_types_btn{background-color:#708090;border:none;width:100%;height:50px;border-radius:18px;}
+.entries_page_fonts{font-size: 20px;font-weight:bold;color:#E6E6FA;font-family:Times New Roman Times, serif;}
+.home-btn
+{
+    color:black;
+    border:none;
+    background-color: brown;
+    height:70px;
+    border-radius:100%;
+
+    font-size: 20px;
+    font-weight:bold;
+    font-family:Times New Roman Times, serif;
+}
+.agency_form
+{
+    font-family: 'Open Sans Condensed', arial, sans;
+    width: 250px;
+    padding: 30px;
+    background: #FFFFFF;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow:  0px 0px 15px rgba(0, 0, 0, 0.22);
+}
+.agency-submit-btn{background-color: blue;border:none;width:100%;height:35px;border-radius:10px;}
+.clour_types_btn_close{background-color: red;border:none;width:100%;height:30px;border-radius:10px;}
+.agency-form-labels{font-family: Georgia, "Times New Roman", Times, serif; 	font-size: 100px;color: red;font-style: normal;font-weight:bold;}
+.entries_page_fonts{font-size: 20px;font-weight:bold;color:#E6E6FA;font-family:Times New Roman Times, serif;}
+
+.sadolin_form_input
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 200;
+    padding: 7px;
+    border: none;
+    border-bottom: 2px solid blue;
+    background: transparent;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px;
+    text-align: center;
+}
+.sadolin_form_input:focus{border-bottom: 2px solid black;}
+
+</style>
+<!-- 
+    172.105.158.108
+ -->
+</head>
+<body class="main_body" onload="hide_chint_all_gui ()">
+<center>
+	<button class="clour_types_btn entries_page_fonts">Chint Names </button><br><br>
+
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+    
+	<button onclick="show_mcb1p_div ()" class="clour_types_btn entries_page_fonts">MCB 1 P </button><br>
+		<div id="mcb1p-div">
+			<form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_mcb1p_name" >
+			<!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_mcb1p_name"> -->
+				<label class=" agency-form-labels entries_page_fonts">Name </label><br>
+				<input autocomplete="off" name="mcb1p" class="sadolin_form_input"> <br>
+				<button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+			</form>
+		<button onclick="close_mcb1p_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+		</div><br>
+
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+	<!-- ================================================== -->
+    <!-- ================================================== -->
+        <button onclick="show_mcb2p_div ()" class="clour_types_btn entries_page_fonts">MCB 2 P </button><br>
+        <div id="mcb2p-div">
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_mcb2p_name" >
+            <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_mcb2p_name" > -->
+                <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                <input autocomplete="off" name="mcb2p" class="sadolin_form_input"> <br>
+                <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+            </form>
+        <button onclick="close_mcb2p_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+        </div><br>
+
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <button onclick="show_mcb3p_div ()" class="clour_types_btn entries_page_fonts">MCB 3 P </button><br>
+        <div id="mcb3p-div">
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_mcb3p_name">
+            <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_mcb3p_name"> -->
+                <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                <input autocomplete="off" name="mcb3p" class="sadolin_form_input"> <br>
+                <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+            </form>
+        <button onclick="close_mcb3p_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+        </div><br>
+
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <button onclick="show_mcb4p_div ()" class="clour_types_btn entries_page_fonts">MCB 4 P </button><br>
+        <div id="mcb4p-div">
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_mcb4p_name">
+            <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_mcb4p_name"  > -->
+                <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                <input autocomplete="off" name="mcb4p" class="sadolin_form_input"> <br>
+                <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+            </form>
+        <button onclick="close_mcb4p_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+        </div><br>
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <button onclick="show_mccb_div ()" class="clour_types_btn entries_page_fonts">MCCB  </button><br>
+        <div id="mccb-div">
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_mccb_name" >
+            <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_mccb_name"> -->
+                <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                <input autocomplete="off" name="mccb" class="sadolin_form_input"> <br>
+                <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+            </form>
+        <button onclick="close_mccb_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+        </div><br>
+
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <button onclick="show_led_bulbs_div ()" class="clour_types_btn entries_page_fonts">Led Bulbs </button><br>
+        <div id="led-bulbs-div">
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_led_bulbs_name" >
+            <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_led_bulbs_name" > -->
+                <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                <input autocomplete="off" name="led_bulbs" class="sadolin_form_input"> <br>
+                <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+            </form>
+        <button onclick="close_led_bulbs_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+        </div><br>
+
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <button onclick="show_led_flood_div ()" class="clour_types_btn entries_page_fonts">Led flood </button><br>
+        <div id="led-flood-div">
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_led_flood_name" >
+            <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_led_flood_name" > -->
+                <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                <input autocomplete="off" name="led_flood" class="sadolin_form_input"> <br>
+                <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+            </form>
+        <button onclick="close_led_flood_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+        </div><br>
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <button onclick="show_led_ceiling_div ()" class="clour_types_btn entries_page_fonts">Led ceiling </button><br>
+        <div id="led-ceiling-div">
+        <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_led_ceiling_name">
+        <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_led_ceiling_name"> -->
+            <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+            <input autocomplete="off" name="led_ceiling" class="sadolin_form_input"> <br>
+            <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+        </form>
+        <button onclick="close_led_ceiling_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+        </div><br>
+        
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <button onclick="show_led_panel_div ()" class="clour_types_btn entries_page_fonts">Led panel </button><br>
+        <div id="led-panel-div">
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_led_panel_name" >
+            <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_led_panel_name" > -->
+                <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                <input autocomplete="off" name="led_panel" class="sadolin_form_input"> <br>
+                <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+            </form>
+        <button onclick="close_led_panel_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+        </div><br>
+        
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <button onclick="show_main_switch_div ()" class="clour_types_btn entries_page_fonts">Main Switch </button><br>
+        <div id="main-switch-div">
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_main_switch_name" >
+            <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_main_switch_name"  > -->
+                <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                <input autocomplete="off" name="main_switch" class="sadolin_form_input"> <br>
+                <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+            </form>
+        <button onclick="close_main_switch_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+        </div><br>
+
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <button onclick="show_cables_div ()" class="clour_types_btn entries_page_fonts">Cables </button><br>
+        <div id="cables-div">
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_cables_name">
+            <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_cables_name" > -->
+                <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                <input autocomplete="off" name="cables" class="sadolin_form_input"> <br>
+                <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+            </form>
+        <button onclick="close_cables_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+        </div><br>
+
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <button onclick="show_contactor_div ()" class="clour_types_btn entries_page_fonts">Contactor </button><br>
+        <div id="contactor-div">
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_contactor_name">
+            <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_contactor_name" > -->
+                <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                <input autocomplete="off" name="contactor" class="sadolin_form_input"> <br>
+                <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+            </form>
+        <button onclick="close_contactor_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+        </div><br>
+
+
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+
+        <button onclick="show_gold_div ()" class="clour_types_btn entries_page_fonts">Gold </button><br>
+        <div id="gold-div">
+            <p>Socket</p>
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_gold_socket_name" >
+            <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_gold_socket_name"> -->
+                <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                <input autocomplete="off" name="gold_socket" class="sadolin_form_input"> <br>
+                <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+            </form>
+            <p> Switch</p>
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_gold_switch_name"  onsubmit="write_zeros ()" >
+                <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_gold_switch_name" > -->
+                    <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                    <input autocomplete="off" name="gold_switch" class="sadolin_form_input"> <br>
+                    <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+                </form>
+
+        <button onclick="close_gold_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+        </div><br>
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <button onclick="show_industrial_div ()" class="clour_types_btn entries_page_fonts">Industrial </button><br>
+        <div id="industrial-div">
+            <p>Socket</p>
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_industrial_socket_name" >
+            <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_industrial_socket_name" > -->
+                <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                <input autocomplete="off" name="industrial_socket" class="sadolin_form_input"> <br>
+                <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+            </form>
+            <p> Switch</p>
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_industrial_switch_name"  onsubmit="write_zeros ()" >
+                <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_industrial_switch_name" > -->
+                    <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                    <input autocomplete="off" name="industrial_switch" class="sadolin_form_input"> <br>
+                    <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+                </form>
+
+        <button onclick="close_industrial_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+        </div><br>
+
+
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+
+        <button onclick="show_white_div ()" class="clour_types_btn entries_page_fonts">White </button><br>
+        <div id="white-div">
+            <p>Socket</p>
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_white_socket_name" >
+            <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_white_socket_name"> -->
+                <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                <input autocomplete="off" name="white_socket" class="sadolin_form_input"> <br>
+                <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+            </form>
+            <p> Switch</p>
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_white_switch_name" >
+                <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_white_switch_name" > -->
+                    <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                    <input autocomplete="off" name="white_switch" class="sadolin_form_input"> <br>
+                    <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+                </form>
+
+        <button onclick="close_white_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+        </div><br>
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+
+        <button onclick="show_silver_div ()" class="clour_types_btn entries_page_fonts">Silver </button><br>
+        <div id="silver-div">
+            <p>Socket</p>
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_silver_socket_name"  >
+            <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_silver_socket_name" > -->
+                <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                <input autocomplete="off" name="silver_socket" class="sadolin_form_input"> <br>
+                <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+            </form>
+            <p> Switch</p>
+            <form class="agency_form" method="POST" action="http://172.105.158.108:4444/record_silver_switch_name" >
+                <!-- <form class="agency_form" method="POST" action="http://127.0.0.1:5000/record_silver_switch_name" > -->
+                    <label class=" agency-form-labels entries_page_fonts">Name </label><br>
+                    <input autocomplete="off" name="silver_switch" class="sadolin_form_input"> <br>
+                    <button  type="submit" class="agency-submit-btn entries_page_fonts">Submit</button>
+                </form>
+
+        <button onclick="close_silver_div ()" class="clour_types_btn_close entries_page_fonts">Close</button><br>
+        </div><br>
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+        <!-- ================================================== -->
+
+
+
+	<button class="home-btn" onclick="Load_home_page ()">Home</button>
+</center>
+</body>
+</html>
